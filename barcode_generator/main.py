@@ -66,5 +66,27 @@ def main():
                 mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
             )
 
+    # Add footer
+    st.markdown(
+        """
+        <style>
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: lightgrey;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+        }
+        </style>
+        <div class="footer">
+            Made by rotichk254@gmail.com
+        </div>
+        """, unsafe_allow_html=True
+    )
+
 if __name__ == "__main__":
     main()
