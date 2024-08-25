@@ -75,7 +75,6 @@ def main():
             left: 0;
             bottom: 0;
             width: 100%;
-            background-color: lightgrey;
             color: black;
             text-align: center;
             padding: 10px;
@@ -83,7 +82,10 @@ def main():
         }
         </style>
         <div class="footer">
-            Made by rotichk254@gmail.com
+            <h6> Made with ❤️ by rotichk254@gmail.com 
+            <br>
+            Muchas gracias </h6>
+            
         </div>
         """, unsafe_allow_html=True
     )
