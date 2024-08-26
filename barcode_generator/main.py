@@ -53,7 +53,7 @@ def main():
                 # Insert barcode images into the Excel file and adjust cell sizes
                 for index, image_data in barcodes.items():
                     image_stream = BytesIO(image_data)
-                    worksheet.insert_image(index + 1, df_copy.columns.get_loc(new_column_name), '', {'image_data': image_stream, 'x_scale': 0.5, 'y_scale': 0.5})
+                    worksheet.insert_image(index + 1, df_copy.columns.get_loc(new_column_name), '', {'image_data': image_stream, 'x_scale': 0.3, 'y_scale': 0.3})
                     worksheet.set_row(index + 1, 60)  # Adjust row height
                 worksheet.set_column(df_copy.columns.get_loc(new_column_name), df_copy.columns.get_loc(new_column_name), 20)  # Adjust column width
 
